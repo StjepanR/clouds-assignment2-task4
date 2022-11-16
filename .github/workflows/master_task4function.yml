@@ -49,7 +49,7 @@ jobs:
     needs: build
     environment:
       name: 'Production'
-      url: ${{ steps.deploy-to-function.outputs.webapp-url }}
+      url: https://task4function.azurewebsites.net
 
     steps:
       - name: Download artifact from build job
